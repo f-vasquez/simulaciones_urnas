@@ -1,0 +1,5 @@
+La Urna de Polya es un modelo clasico de probabilidades el cual tiene distintos usos, donde el concepto de bolas puede representar otros objetos como atomos, personas, autos, etc.
+
+El enunciado es el siguiente: Se consideran en un inicio $n_b$ bolas negras y $n_w$ bolas blancas en una urna. En el primero paso se saca una bola al azar, se mira el color y se regresa la misma bola junto a otra del mismo color a la urna y asi iterativamente, hasta completar $n_{iter}$ iteraciones.
+
+
