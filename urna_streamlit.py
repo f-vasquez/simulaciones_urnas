@@ -54,6 +54,7 @@ if (st.button('Correr Simulación')):
     ax.set_title('Proporción de bolas negras por iteración\n Todas las simulaciones')
     ax.set_ylabel('Proporción de bolas negras')
     ax.set_xlabel('Iteración')
+    ax.set_ylim(0,1)
     
     st.pyplot(fig)
 
