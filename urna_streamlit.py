@@ -45,7 +45,7 @@ if (st.button('Correr Simulación')):
     sim_polya = n_sim_polyas_urn(n_sims, N, n_w, n_b)
     sim_polya.run_sim()
 
-    st.write(f'''A continuacion se muestran la proporción de las bolas negras para cada una de las {sim_polya.n_sim} simulaciones con {n_sims} iteraciones. Se consideran un numero de bolas inicial de {n_b} negras y {n_w} blancas ''')
+    st.write(f'''A continuacion se muestran la proporción de las bolas negras para cada una de las {sim_polya.n_sim} simulaciones con {N} iteraciones. Se consideran un numero de bolas inicial de {n_b} negras y {n_w} blancas ''')
     
     fig, ax = plt.subplots()
     for i in range(sim_polya.n_sim):
@@ -75,7 +75,7 @@ image_2 = Image.open('graficos/aprox_uniforme.png')
 st.image(image_2, caption='Histograma, primer caso',use_column_width= 'always')
 st.write('En el gráfico se observa el histograma de la proporción de las bolas negras en la última iteración para todas las simulaciones. Se tiene que no existe tendencia a concentrarse en ningún punto, otorgando igual peso a todo el intervalo. Se grafica la densidad real de una $Uniforme(0,1)$ para comparar.')
 
-st.write('Para estudiar un comportamiento distinto de la distribucion Beta, se seleccionan otros valores iniciales. Se selecciona un numero inicial de 10 bolas negras y 1 blanca. Se realizan 100 simulaciones con 500 iteraciones')
+st.write('Para estudiar un comportamiento distinto de la distribucion Beta, se seleccionan otros valores iniciales. Se selecciona un numero inicial de 10 bolas negras y 1 blanca. Se realizan 200 simulaciones con 500 iteraciones')
 image = Image.open('graficos/grafico_caso.png')
 
 st.image(image, caption='Grafico segundo caso',use_column_width= 'always')
